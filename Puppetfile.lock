@@ -9,10 +9,10 @@ FORGE
 
 GIT
   remote: git://github.com/muccg/puppet-ccgcommon.git
-  ref: master
-  sha: 7865d227ed425fe6744fb987a66fa74044ad6607
+  ref: 1.0.2
+  sha: 6ba5aee006ba763a6beaccd6eae2c8d308c9953c
   specs:
-    ccgcommon (1.0.3)
+    ccgcommon (1.0.2)
 
 GIT
   remote: git://github.com/muccg/puppet-repo.git
