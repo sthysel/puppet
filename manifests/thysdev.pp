@@ -1,34 +1,42 @@
-include ccgcommon
-include repo::ubuntuccg
+#class {'java':
+#    apt::ppa { 'ppa:webupd8team/java':}
+#    stage => 'setup'
+#}
 
-#apt::ppa { 'ppa:webupd8team/java': }
+node xps {
 
-Package { ensure => 'installed' }
-package {'oracle-java8-installer': }
-package {'oracle-java8-set-default': }
+    include ccgcommon
+    include repo::ubuntuccg
+    # include java
 
-$packages = ['librarian-puppet', 
-             'tmux', 
-             'tree', 
-             'git', 
-             'vim', 
-             'emacs', 
-             'mercurial', 
-             'mercurial-keyring',
-             'graphviz',
-             # python
-             'python-dev', 'python-virtualenv',
-             # monitoring
-             'iotop', 'sysstat', 'iftop', 'htop', 'iptraf',
-             'ccg'
-            ]
+    #apt::ppa { 'ppa:webupd8team/java':}
+    Package { ensure => 'installed' }
 
-package {$packages: } 
+    $packages = ['librarian-puppet', 
+                 'tmux', 
+                 'tree', 
+                 'git', 
+                 'vim', 
+                 'emacs', 
+                 'mercurial', 
+                 'mercurial-keyring',
+                 'graphviz',
+                 # python
+                 'python-dev', 'python-virtualenv',
+                 # monitoring
+                 'iotop', 'sysstat', 'iftop', 'htop', 'iptraf',
+                 'ccg',
+                 # java
+                 #'oracle-java8-installer', 'oracle-java8-set-default',
+                ]
 
-user {'wortel':
-    ensure => 'present',
-    home   => '/home/wortel',
-    shell  => '/bin/bash',
-    password => 'qeZ8GGmpP50Ao'
+    package {$packages: } 
+
+    user {'wortel':
+        ensure => 'present',
+        home   => '/home/wortel',
+        shell  => '/bin/bash',
+        password => 'qeZ8GGmpP50Ao'
+    }
 }
 
