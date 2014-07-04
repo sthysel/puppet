@@ -4,8 +4,27 @@ FORGE
     puppetlabs/apt (1.3.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.2.2)
+    saz/timezone (3.0.1)
+      puppetlabs/stdlib (>= 2.3.0)
+
+GIT
+  remote: git://github.com/muccg/puppet-ccgcommon.git
+  ref: master
+  sha: 7865d227ed425fe6744fb987a66fa74044ad6607
+  specs:
+    ccgcommon (1.0.3)
+
+GIT
+  remote: git://github.com/muccg/puppet-repo.git
+  ref: master
+  sha: c6bd2f8379a3779384ad9fe120983e267958022f
+  specs:
+    repo (1.0.5)
 
 DEPENDENCIES
+  ccgcommon (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
+  repo (>= 0)
+  saz/timezone (= 3.0.1)
 
