@@ -3,7 +3,7 @@
 #    stage => 'setup'
 #}
 
-node xps {
+node dev {
 
     include ccgcommon
     include repo::ubuntuccg
@@ -39,4 +39,7 @@ node xps {
         password => 'qeZ8GGmpP50Ao'
     }
 }
+
+node xps inherits dev {}
+node folly inherits dev {}
 

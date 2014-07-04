@@ -16,10 +16,10 @@ GIT
 
 GIT
   remote: git://github.com/muccg/puppet-repo.git
-  ref: master
-  sha: c6bd2f8379a3779384ad9fe120983e267958022f
+  ref: 1.0.6
+  sha: 97e97a675b4e02c82d8e80ef2225315fccd5bf1a
   specs:
-    repo (1.0.5)
+    repo (1.0.6)
 
 DEPENDENCIES
   ccgcommon (>= 0)

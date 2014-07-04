@@ -7,4 +7,5 @@ mod 'ccgcommon',
   :git => "git://github.com/muccg/puppet-ccgcommon.git",
   :ref => "1.0.2"
 mod 'repo',
-  :git => "git://github.com/muccg/puppet-repo.git"
+  :git => "git://github.com/muccg/puppet-repo.git",
+  :ref => "1.0.6"
