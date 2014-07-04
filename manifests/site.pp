@@ -1,15 +1,9 @@
-#class {'java':
-#    apt::ppa { 'ppa:webupd8team/java':}
-#    stage => 'setup'
-#}
-
 node dev {
 
     include ccgcommon
     include repo::ubuntuccg
-    # include java
+    include oraclejava::java8
 
-    #apt::ppa { 'ppa:webupd8team/java':}
     Package { ensure => 'installed' }
 
     $packages = ['librarian-puppet', 
@@ -26,8 +20,6 @@ node dev {
                  # monitoring
                  'iotop', 'sysstat', 'iftop', 'htop', 'iptraf',
                  'ccg',
-                 # java
-                 #'oracle-java8-installer', 'oracle-java8-set-default',
                 ]
 
     package {$packages: } 

@@ -9,3 +9,5 @@ mod 'ccgcommon',
 mod 'repo',
   :git => "git://github.com/muccg/puppet-repo.git",
   :ref => "1.0.6"
+mod 'oraclejava',
+  :git => "git@github.com:muccg/puppet-oraclejava.git"
