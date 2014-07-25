@@ -15,6 +15,13 @@ GIT
     ccgcommon (1.0.2)
 
 GIT
+  remote: git://github.com/muccg/puppet-oraclejava.git
+  ref: 1.0.1
+  sha: 25c2f049c4d86e509416df786711cd5b2ae92c03
+  specs:
+    oraclejava (1.0.1)
+
+GIT
   remote: git://github.com/muccg/puppet-repo.git
   ref: 1.0.6
   sha: 97e97a675b4e02c82d8e80ef2225315fccd5bf1a
@@ -23,6 +30,7 @@ GIT
 
 DEPENDENCIES
   ccgcommon (>= 0)
+  oraclejava (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
   repo (>= 0)
