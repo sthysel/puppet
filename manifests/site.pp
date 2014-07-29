@@ -33,5 +33,6 @@ node dev {
 }
 
 node xps inherits dev {}
+node thysxps inherits dev {}
 node folly inherits dev {}
 
